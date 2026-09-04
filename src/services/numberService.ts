@@ -322,7 +322,7 @@ export const numberService = {
 
     return { 
       success: false, 
-      message: 'Невірний пароль адміністратора (пароль за замовчуванням: rams3y2026)' 
+      message: 'Невірний пароль адміністратора (пароль за замовчуванням: qwerty)' 
     };
   },
 
