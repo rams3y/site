@@ -1,0 +1,6 @@
+name = "rams3y-numbers"
+compatibility_date = "2024-09-01"
+pages_build_output_dir = "dist"
+
+[build]
+command = "npm run build:pages"

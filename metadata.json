@@ -1,0 +1,6 @@
+{
+  "name": "Rams3y Number — Каталог красивих номерів",
+  "description": "Ексклюзивний каталог красивих, срібних, золотих та VIP номерів Київстар, Vodafone та Lifecell. Фізичні SIM-карти, доставка Новою Поштою, офіційна оплата на ФОП. Замовлення через Telegram @lil_rams3y та Viber 0638637717.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
