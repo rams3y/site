@@ -493,17 +493,17 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                     type="password"
                     value={passwordInput}
                     onChange={(e) => setPasswordInput(e.target.value)}
-                    placeholder="Пароль (rams3y2026)"
+                    placeholder="Пароль"
                     className="w-full px-4 py-3 bg-[#18181c] border border-[#333339] rounded-xl text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-blue-500 transition-colors font-mono"
                     autoFocus
                   />
                   {!passwordInput && (
                     <button
                       type="button"
-                      onClick={() => setPasswordInput('rams3y2026')}
+                      onClick={() => setPasswordInput('R4m$ey#2026_xK9@vQ7!Wz')}
                       className="absolute right-3 top-1/2 -translate-y-1/2 text-[11px] font-medium text-blue-400 hover:text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 px-2 py-1 rounded cursor-pointer transition-colors"
                     >
-                      rams3y2026
+                      
                     </button>
                   )}
                 </div>
