@@ -1,9 +1,9 @@
-import { initializeApp, getFirestore } from 'firebase/app';
-import { getFirestore as getFs } from 'firebase/firestore';
+import { initializeApp } from 'firebase/app';
 import {
-  collection, doc, getDocs, addDoc, updateDoc, deleteDoc,
+  getFirestore, collection, doc, getDocs, addDoc, updateDoc, deleteDoc,
   onSnapshot, query, orderBy, serverTimestamp, writeBatch
 } from 'firebase/firestore';
+import { LifecellNumber, ServiceResult } from '../types';
 
 const firebaseConfig = {
   apiKey: "AIzaSyA5pX0wt83GUnjDRFdZvFbvWiV06n5dTb8",
@@ -16,9 +16,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFs(app);
-
-import { LifecellNumber, ServiceResult } from '../types';
+const db = getFirestore(app);
 
 const ADMIN_PASSWORD = 'R4m$ey#2026_xK9@vQ7!Wz';
 const COLLECTION_NAME = 'numbers';
