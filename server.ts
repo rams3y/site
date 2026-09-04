@@ -48,16 +48,10 @@ function saveCatalogData(data: any[]) {
 }
 
 function getAdminPassword(): string {
-  try {
-    if (fs.existsSync(CONFIG_FILE)) {
-      const content = fs.readFileSync(CONFIG_FILE, 'utf8');
-      const cfg = JSON.parse(content);
-      return cfg.password || 'rams3y2026';
-    }
+  
   } catch (err) {
     console.error('Error reading admin config:', err);
   }
-  return 'rams3y2026';
 }
 
 function setAdminPassword(newPass: string): boolean {
@@ -86,18 +80,16 @@ app.post('/api/admin/verify', (req, res) => {
   // Allow current configured password or standard admin passwords
   const validPasswords = [
     currentPassword,
-    'rams3y2026',
+    'R4m$ey#2026_xK9@vQ7!Wz',
     'rams3y',
-    'Rams3y2026',
+    'R4m$ey#2026_xK9@vQ7!Wz',
     'admin',
     'R4m$ey#2026_xK9@vQ7!Wz'
   ];
 
   if (validPasswords.includes(input)) {
     res.json({ success: true, token: 'admin_session_token_' + Date.now() });
-  } else {
-    res.status(401).json({ success: false, message: 'Невірний пароль адміністратора (спробуйте: rams3y2026)' });
-  }
+  } else 
 });
 
 // Change admin password

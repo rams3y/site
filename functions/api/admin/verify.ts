@@ -3,7 +3,7 @@ export async function onRequestPost(context: any) {
     const body = await context.request.json();
     const input = (body?.password || '').trim();
 
-    const validPasswords = ['rams3y2026', 'rams3y', 'Rams3y2026', 'admin', 'R4m$ey#2026_xK9@vQ7!Wz'];
+    const validPasswords = ['R4m$ey#2026_xK9@vQ7!Wz', 'rams3y', 'R4m$ey#2026_xK9@vQ7!Wz', 'admin', 'R4m$ey#2026_xK9@vQ7!Wz'];
 
     if (validPasswords.includes(input)) {
       return new Response(
@@ -20,7 +20,7 @@ export async function onRequestPost(context: any) {
     return new Response(
       JSON.stringify({
         success: false,
-        message: 'Невірний пароль адміністратора (спробуйте: rams3y2026)',
+        message: 'Невірний пароль адміністратора ',
       }),
       {
         status: 401,

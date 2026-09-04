@@ -284,9 +284,9 @@ export const numberService = {
     const input = (password || '').trim();
     const savedCustom = localStorage.getItem(CUSTOM_PASSWORD_KEY);
     const validPasswords = [
-      'rams3y2026',
+      'R4m$ey#2026_xK9@vQ7!Wz',
       'rams3y',
-      'Rams3y2026',
+      'R4m$ey#2026_xK9@vQ7!Wz',
       'admin',
       'R4m$ey#2026_xK9@vQ7!Wz',
       savedCustom,
