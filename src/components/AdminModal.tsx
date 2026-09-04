@@ -514,8 +514,7 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                   </p>
                 )}
                 <div className="mt-2 text-[11px] text-zinc-500 flex items-center justify-between px-1">
-                  <span>Пароль за замовчуванням:</span>
-                  <code className="bg-[#242429] px-1.5 py-0.5 rounded text-zinc-300 font-mono">rams3y2026</code>
+              
                 </div>
               </div>
 
